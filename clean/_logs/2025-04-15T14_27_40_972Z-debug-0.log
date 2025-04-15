@@ -5,13 +5,13 @@
 4 silly config load:file:d:\portfolio\portfolio-new\.npmrc
 5 silly config load:file:C:\Users\Dhruv Mendiratta\.npmrc
 6 silly config load:file:C:\Users\Dhruv Mendiratta\AppData\Roaming\npm\etc\npmrc
-7 verbose title npm view @react-three/fiber description dist-tags.latest homepage version time
-8 verbose argv "view" "--json" "--" "@react-three/fiber" "description" "dist-tags.latest" "homepage" "version" "time"
-9 verbose logfile logs-max:10 dir:d:\portfolio\portfolio-new\clean\_logs\2025-04-15T14_16_03_649Z-
-10 verbose logfile d:\portfolio\portfolio-new\clean\_logs\2025-04-15T14_16_03_649Z-debug-0.log
+7 verbose title npm view @react-three/drei description dist-tags.latest homepage version time
+8 verbose argv "view" "--json" "--" "@react-three/drei" "description" "dist-tags.latest" "homepage" "version" "time"
+9 verbose logfile logs-max:10 dir:d:\portfolio\portfolio-new\clean\_logs\2025-04-15T14_27_40_972Z-
+10 verbose logfile d:\portfolio\portfolio-new\clean\_logs\2025-04-15T14_27_40_972Z-debug-0.log
 11 silly logfile start cleaning logs, removing 1 files
 12 silly logfile done cleaning log files
-13 http fetch GET 200 https://registry.npmjs.org/@react-three%2ffiber 490ms (cache updated)
+13 http fetch GET 200 https://registry.npmjs.org/@react-three%2fdrei 502ms (cache updated)
 14 verbose cwd d:\portfolio\portfolio-new
 15 verbose os Windows_NT 10.0.26120
 16 verbose node v22.14.0
