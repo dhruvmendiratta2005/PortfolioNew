@@ -5,13 +5,13 @@
 4 silly config load:file:d:\portfolio\portfolio-new\.npmrc
 5 silly config load:file:C:\Users\Dhruv Mendiratta\.npmrc
 6 silly config load:file:C:\Users\Dhruv Mendiratta\AppData\Roaming\npm\etc\npmrc
-7 verbose title npm view autoprefixer description dist-tags.latest homepage version time
-8 verbose argv "view" "--json" "--" "autoprefixer" "description" "dist-tags.latest" "homepage" "version" "time"
-9 verbose logfile logs-max:10 dir:d:\portfolio\portfolio-new\clean\_logs\2025-04-15T14_16_16_955Z-
-10 verbose logfile d:\portfolio\portfolio-new\clean\_logs\2025-04-15T14_16_16_955Z-debug-0.log
+7 verbose title npm view framer-motion description dist-tags.latest homepage version time
+8 verbose argv "view" "--json" "--" "framer-motion" "description" "dist-tags.latest" "homepage" "version" "time"
+9 verbose logfile logs-max:10 dir:d:\portfolio\portfolio-new\clean\_logs\2025-04-15T14_27_57_344Z-
+10 verbose logfile d:\portfolio\portfolio-new\clean\_logs\2025-04-15T14_27_57_344Z-debug-0.log
 11 silly logfile start cleaning logs, removing 1 files
 12 silly logfile done cleaning log files
-13 http fetch GET 200 https://registry.npmjs.org/autoprefixer 376ms (cache updated)
+13 http fetch GET 200 https://registry.npmjs.org/framer-motion 684ms (cache updated)
 14 verbose cwd d:\portfolio\portfolio-new
 15 verbose os Windows_NT 10.0.26120
 16 verbose node v22.14.0

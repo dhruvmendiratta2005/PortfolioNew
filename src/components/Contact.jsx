@@ -24,7 +24,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://formspree.io/f/xyzevbvg", {
+      const response = await fetch(`${process.env.REACT_APP_FORMSPREE_URL}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -159,7 +159,7 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-            
+
           </div>
 
           {/* Social Links */}
