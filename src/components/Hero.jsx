@@ -36,7 +36,7 @@ const Hero = () => {
           <div className="absolute inset-0 bg-secondary rounded-full blur-md opacity-30"></div>
           {/* Profile Image */}
           <img
-            src="D:\portfolio\portfolio-new\public\images\profile.png" // Make sure to add your image to public/images/
+            src="/images/profile.png" // Make sure to add your image to public/images/
             alt="Dhruv Mendiratta"
             className="relative z-10 w-full h-full rounded-full object-cover border-4 border-secondary/50 hover:border-secondary transition-all"
           />
