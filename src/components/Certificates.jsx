@@ -11,7 +11,7 @@ const Certificates = () => {
         issuer: "Udemy",
         date: "Oct 2023",
         image: "/certificates/udemypy.jpg",
-        url: "#ude.my/UC-f9eb9d8e-edce-4035-84fc-324a211d60e6"
+        url: "ude.my/UC-f9eb9d8e-edce-4035-84fc-324a211d60e6"
       },
       {
         title: "Programming in JAVA",

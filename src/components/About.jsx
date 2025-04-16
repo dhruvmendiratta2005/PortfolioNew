@@ -1,15 +1,43 @@
 import { motion } from "framer-motion";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { useEffect } from "react";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
+
+// Fix for missing marker icons in React
+delete L.Icon.Default.prototype._getIconUrl;
+
+L.Icon.Default.mergeOptions({
+  iconUrl:
+    "https://unpkg.com/leaflet@1.9.3/dist/images/marker-icon.png",
+  iconRetinaUrl:
+    "https://unpkg.com/leaflet@1.9.3/dist/images/marker-icon-2x.png",
+  shadowUrl:
+    "https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png",
+});
 
 const About = () => {
   const timeline = [
-    { year: "2023", title: "SRM University", desc: "B.Tech CSE (GPA: 9.94)" },
     { year: "2024", title: "GoKiwi Internship", desc: "Product Research & UX" },
     { year: "2025", title: "AIthon Hackathon", desc: "Helix Oracle AI Project" },
   ];
 
   return (
     <section className="py-20 bg-primary text-accent">
-      <h2 className="text-4xl font-bold text-center mb-12 gradient-text">About Me</h2>
+
+      {/* Recent Highlights Section */}
+      <div className="text-center mb-12">
+        <motion.h3
+          className="text-4xl font-extrabold text-white gradient-text"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          Recent Highlights
+        </motion.h3>
+      </div>
+
+      {/* Timeline */}
       <div className="max-w-4xl mx-auto px-4">
         {timeline.map((item, i) => (
           <motion.div
@@ -28,6 +56,44 @@ const About = () => {
             </div>
           </motion.div>
         ))}
+      </div>
+
+      {/* Leaflet Map with Multiple Locations */}
+      <div className="max-w-4xl mx-auto mt-16">
+        <h3 className="text-2xl font-semibold mb-4 text-center">📍 My Journey Across India</h3>
+        <div className="rounded-2xl overflow-hidden shadow-lg border border-secondary/30">
+          <MapContainer
+            center={[22.5937, 78.9629]} // Center of India
+            zoom={4.4}
+            scrollWheelZoom={false}
+            style={{ height: "400px", width: "100%" }}
+          >
+            <TileLayer
+              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+
+            {/* Mumbai */}
+            <Marker position={[19.0760, 72.8777]}>
+              <Popup>🏙️ Mumbai — Where I grew up</Popup>
+            </Marker>
+
+            {/* Gurgaon */}
+            <Marker position={[28.4595, 77.0266]}>
+              <Popup>🌇 Gurgaon — Lived here for a while</Popup>
+            </Marker>
+
+            {/* Vapi */}
+            <Marker position={[20.3893, 72.9106]}>
+              <Popup>🏡 Vapi — My current home</Popup>
+            </Marker>
+
+            {/* SRM University */}
+            <Marker position={[12.8232, 80.0442]}>
+              <Popup>🎓 SRM IST — Pursuing B.Tech CSE</Popup>
+            </Marker>
+          </MapContainer>
+        </div>
       </div>
     </section>
   );
