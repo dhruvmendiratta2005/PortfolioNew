@@ -35,7 +35,24 @@ const TravelSection = () => {
     { id: 20, name: "Shimla, India", position: [31.1048, 77.1734], date: "2021", description: "British colonial town" },
     { id: 21, name: "Ludhiana, India", position: [30.9010, 75.8573], date: "2020", description: "Punjab heartland" },
     { id: 22, name: "Ahmedabad, India", position: [23.0225, 72.5714], date: "2021", description: "Cultural capital of Gujarat" },
-    { id: 23, name: "Indore, India", position: [22.7196, 75.8577], date: "2021", description: "Food capital of MP" }
+    { id: 23, name: "Indore, India", position: [22.7196, 75.8577], date: "2021", description: "Food capital of MP" },
+    { id: 24, name: "Hyderabad, India", position: [17.3840, 78.4563], date: "2017", description: "Upcoming Tech Hub" },
+    { id: 25, name: "Bengaluru, India", position: [12.9724, 77.5806], date: "2021", description: "Silicon Valley Of India" },
+    { id: 26, name: "Jabalpur, India", position: [23.1600, 79.9500], date: "2021", description: "Great City" },
+    { id: 27, name: "Jaisalmer, India", position: [26.9116, 70.9229], date: "2021", description: "Deserts and camels" },
+    { id: 28, name: "Udaipur, India", position: [24.5854, 73.7125], date: "2021", description: "Food capital of MP" },
+    { id: 29, name: "Auranagabad, India", position: [19.8846, 75.3398], date: "2021", description: "Lived here for 1 year" },
+    { id: 30, name: "Agra, India", position: [27.1833, 78.0167], date: "2021", description: "Taj Mahal" },
+    { id: 31, name: "Amritsar, India", position: [31.6339, 74.8722], date: "2021", description: "Wagha Border" },
+    { id: 32, name: "Kohlapur, India", position: [16.6913, 74.2448], date: "2021", description: "Mom Dad College" },
+    { id: 33, name: "Pune, India", position: [18.5204, 73.8567], date: "2021", description: "Tech city visit" },
+    { id: 34, name: "Nashik, India", position: [19.9975, 73.7898], date: "2021", description: "Religious and vineyard town" },
+    { id: 35, name: "Daman, India", position: [20.3974, 72.8328], date: "2021", description: "Beach escape on the west coast" },
+    { id: 36, name: "Vapi, India", position: [20.3719, 72.9043], date: "2021", description: "Industrial stopover" },
+    { id: 37, name: "Sriharikota, India", position: [13.7192, 80.2304], date: "2024", description: "ISRO spaceport exploration" },
+    { id: 38, name: "Surat, India", position: [21.1702, 72.8311], date: "2021", description: "Diamond city and food hub" },
+    { id: 39, name: "Ganpatipule, India", position: [17.1426, 73.2829], date: "2020", description: "Serene beach and Ganpati temple" },
+    { id: 41, name: "Mahabaleshwar, India", position: [17.9307, 73.6475], date: "2021", description: "Strawberries, hills, and scenic views" }
   ];
 
   const featuredPlaces = visitedPlaces.filter(place =>
