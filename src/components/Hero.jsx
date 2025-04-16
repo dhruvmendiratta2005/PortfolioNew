@@ -1,6 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
 import { motion } from "framer-motion";
+import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa"; // Importing icons
 
 const Hero = () => {
   return (
@@ -22,6 +23,19 @@ const Hero = () => {
         >
           AI & Full-Stack Developer
         </motion.p>
+
+        {/* Social Media Links */}
+        <div className="mt-6 flex justify-center space-x-6">
+          <a href="https://www.instagram.com/its_the_lost_wanderer" target="_blank" rel="noopener noreferrer" className="text-3xl text-secondary hover:text-accent transition-all">
+            <FaInstagram />
+          </a>
+          <a href="https://github.com/dhruvmendiratta2005" target="_blank" rel="noopener noreferrer" className="text-3xl text-secondary hover:text-accent transition-all">
+            <FaGithub />
+          </a>
+          <a href="https://www.linkedin.com/in/dhruv-mendiratta-b2251a2a7" target="_blank" rel="noopener noreferrer" className="text-3xl text-secondary hover:text-accent transition-all">
+            <FaLinkedin />
+          </a>
+        </div>
       </div>
 
       {/* Profile Photo (Bottom Center on Mobile, Top Right on Desktop) */}
