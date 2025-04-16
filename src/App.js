@@ -6,6 +6,8 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Certificates from "./components/Certificates";
+import SocialFeed from "./components/SocialFeed";
+import TravelSection from "./components/TravelSection";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Projects />
       <Experience />
       <Certificates />
+      <SocialFeed />
+      <TravelSection />
       <Contact />
     </div>
   );
