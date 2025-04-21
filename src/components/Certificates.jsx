@@ -65,6 +65,13 @@ const Certificates = () => {
         date: "Aug 2024",
         image: "/certificates/pp.jpg",
         url: "#"
+      },
+      {
+        title: "SharpAIThon Finalists",
+        issuer: "Computing Technologies and Sharpsys Software Solutions",
+        date: "Apr 2025",
+        image: "/certificates/aithon.jpg",
+        url: "#"
       }
     ]
   };
