@@ -52,7 +52,8 @@ const TravelSection = () => {
     { id: 37, name: "Sriharikota, India", position: [13.7192, 80.2304], date: "2024", description: "ISRO spaceport exploration" },
     { id: 38, name: "Surat, India", position: [21.1702, 72.8311], date: "2021", description: "Diamond city and food hub" },
     { id: 39, name: "Ganpatipule, India", position: [17.1426, 73.2829], date: "2020", description: "Serene beach and Ganpati temple" },
-    { id: 41, name: "Mahabaleshwar, India", position: [17.9307, 73.6475], date: "2021", description: "Strawberries, hills, and scenic views" }
+    { id: 41, name: "Mahabaleshwar, India", position: [17.9307, 73.6475], date: "2021", description: "Strawberries, hills, and scenic views" },
+    { id: 42, name: "Bali, Indonesia", position: [-8.409518, 115.188919], date: "2025", description: "Hindu temples and a lot of fun" }
   ];
 
   const featuredPlaces = visitedPlaces.filter(place =>
