@@ -4,6 +4,13 @@ import { FaBriefcase, FaUserTie } from "react-icons/fa";
 const Experience = () => {
   const experiences = [
     {
+      role: "Tech Intern",
+      company: "Maa Foundation",
+      period: "2025",
+      desc: "A lot of NGO experience",
+      icon: <FaUserTie className="text-accent" size={24} />
+    },
+    {
       role: "Product Intern",
       company: "GoKiwi",
       period: "2024",
