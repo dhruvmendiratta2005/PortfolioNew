@@ -23,7 +23,7 @@ const Navbar = () => {
   ];
 
   return (
-    <motion.nav 
+    <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
@@ -32,13 +32,13 @@ const Navbar = () => {
       <div className="flex justify-center px-4 w-full">
         <div className={`flex items-center justify-center w-fit mx-auto rounded-full transition-all duration-300 overflow-x-auto no-scrollbar ${
           scrolled 
-            ? 'bg-white/10 backdrop-blur-md shadow-lg shadow-black/20 border border-white/20 py-3 px-6' 
-            : 'bg-white/5 backdrop-blur-sm border border-white/10 py-3 px-6'
+            ? 'bg-white/20 backdrop-blur-md shadow-lg shadow-black/20 border border-white/30 py-3 px-6' 
+            : 'bg-white/10 backdrop-blur-sm border border-white/20 py-3 px-6'
         }`}>
           <div className="flex space-x-1 md:space-x-2">
             {navLinks.map((link) => (
-              <a 
-                key={link.name} 
+              <a
+                key={link.name}
                 href={link.href}
                 className="text-gray-300 hover:text-[#38bdf8] whitespace-nowrap px-3 py-2 rounded-full hover:bg-white/5 transition-all text-sm font-medium"
               >
