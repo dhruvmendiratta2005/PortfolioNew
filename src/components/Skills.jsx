@@ -3,34 +3,34 @@ import { motion } from "framer-motion";
 const Skills = () => {
   const skills = [
     // Core Programming
-    { name: "Python", level: 90, color: "#00ffcc" },
-    { name: "Java", level: 75, color: "#ff2ced" },
-    { name: "C++", level: 70, color: "#ffcc00" },
+    { name: "Python", level: 90, color: "#38bdf8" },
+    { name: "Java", level: 75, color: "#818cf8" },
+    { name: "C++", level: 70, color: "#fcd34d" },
 
     // Web Development
-    { name: "JavaScript", level: 85, color: "#ff2ced" },
-    { name: "React", level: 80, color: "#00ffcc" },
-    { name: "HTML/CSS", level: 90, color: "#ffcc00" },
+    { name: "JavaScript", level: 85, color: "#818cf8" },
+    { name: "React", level: 80, color: "#38bdf8" },
+    { name: "HTML/CSS", level: 90, color: "#fcd34d" },
 
     // Backend & Databases
-    { name: "Flask", level: 80, color: "#00ffcc" },
-    { name: "MySQL", level: 85, color: "#ff2ced" },
-    { name: "REST APIs", level: 80, color: "#ffcc00" },
+    { name: "Flask", level: 80, color: "#38bdf8" },
+    { name: "MySQL", level: 85, color: "#818cf8" },
+    { name: "REST APIs", level: 80, color: "#fcd34d" },
 
     // AI / ML / Computer Vision
-    { name: "Machine Learning", level: 80, color: "#00ffcc" },
-    { name: "Deep Learning", level: 75, color: "#ff2ced" },
-    { name: "OpenCV", level: 80, color: "#ffcc00" },
-    { name: "CNN Models", level: 75, color: "#00ffcc" },
+    { name: "Machine Learning", level: 80, color: "#38bdf8" },
+    { name: "Deep Learning", level: 75, color: "#818cf8" },
+    { name: "OpenCV", level: 80, color: "#fcd34d" },
+    { name: "CNN Models", level: 75, color: "#38bdf8" },
 
     // Tools & Tech
-    { name: "Git/GitHub", level: 85, color: "#ff2ced" },
-    { name: "VS Code", level: 90, color: "#ffcc00" },
-    { name: "Arduino/RFID", level: 70, color: "#00ffcc" },
+    { name: "Git/GitHub", level: 85, color: "#818cf8" },
+    { name: "VS Code", level: 90, color: "#fcd34d" },
+    { name: "Arduino/RFID", level: 70, color: "#38bdf8" },
 
     // Design & UI
-    { name: "UI/UX Design", level: 75, color: "#ff2ced" },
-    { name: "Figma", level: 70, color: "#ffcc00" },
+    { name: "UI/UX Design", level: 75, color: "#818cf8" },
+    { name: "Figma", level: 70, color: "#fcd34d" },
   ];
 
   return (

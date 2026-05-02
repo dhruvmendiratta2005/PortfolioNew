@@ -9,7 +9,7 @@ const Projects = () => {
       tech: "Python, TensorFlow/Keras, CNN, KAN, Medical Imaging",
       link: "#",
       github: "https://github.com/dhruvmendiratta2005/explainable-medical-ai",
-      color: "#00ffcc"
+      color: "#38bdf8"
     },
     {
       title: "LocaHelp",
@@ -17,7 +17,7 @@ const Projects = () => {
       tech: "React, Node.js, Firebase",
       link: "https://locahelp-final.vercel.app/",
       github: "https://github.com/dhruvmendiratta2005/Locahelp_final",
-      color: "#ffcc00"
+      color: "#fcd34d"
     },
     {
       title: "ML powered - Emotion based Music Player System",
@@ -26,7 +26,7 @@ const Projects = () => {
       contributor: "https://github.com/ayushdhandhan",
       link: "https://ml-powered-playback.vercel.app/",
       github: "https://github.com/ayushdhandhan/ML-powered-playback",
-      color: "#ff2ced"
+      color: "#818cf8"
     },
     {
       title: "Helix Oracle AI",
@@ -34,7 +34,7 @@ const Projects = () => {
       tech: "React, Node.js, Python, Dialogflow",
       link: "#",
       github: "#",
-      color: "#ff2ced"
+      color: "#818cf8"
     },
     {
       title: "Bank Management System",
@@ -42,7 +42,7 @@ const Projects = () => {
       tech: "Python, Tkinter, MySQL",
       link: "#",
       github: "https://github.com/dhruvmendiratta2005/bank_management_using_tkinter",
-      color: "#00ffcc"
+      color: "#38bdf8"
     },
     {
       title: "InspireUI",
@@ -50,7 +50,7 @@ const Projects = () => {
       tech: "Flutter, Firebase",
       link: "#",
       github: "#",
-      color: "#ffcc00"
+      color: "#fcd34d"
     },
     {
       title: "RFID Smart Attendance System",
@@ -58,7 +58,7 @@ const Projects = () => {
       tech: "Arduino, RFID, Embedded Systems",
       link: "#",
       github: "#",
-      color: "#00ffcc"
+      color: "#38bdf8"
     }
   ];
 

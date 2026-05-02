@@ -4,12 +4,12 @@
 
 /* Custom Glow Effect */
 .glow {
-  text-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
 }
 
 /* Gradient Text */
 .gradient-text {
-  background: linear-gradient(90deg, #00ffcc, #ff2ced);
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
