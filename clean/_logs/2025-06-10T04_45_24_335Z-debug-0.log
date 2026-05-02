@@ -11,3 +11,9 @@
 10 verbose logfile D:\portfolio\portfolio-new\clean\_logs\2025-06-10T04_45_24_335Z-debug-0.log
 11 silly logfile start cleaning logs, removing 1 files
 12 silly logfile done cleaning log files
+13 verbose cwd D:\portfolio\portfolio-new
+14 verbose os Windows_NT 10.0.26120
+15 verbose node v22.14.0
+16 verbose npm  v11.3.0
+17 verbose exit 3221225786
+18 verbose code 3221225786

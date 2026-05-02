@@ -4,31 +4,34 @@ import { FaBriefcase, FaUserTie } from "react-icons/fa";
 const Experience = () => {
   const experiences = [
     {
+      role: "Software Engineering Intern",
+      company: "Wells Fargo",
+      period: "Jun 2026 – Aug 2026",
+      desc: "Selected for a competitive internship program focused on building scalable financial systems and gaining hands-on experience in enterprise-level technologies.",
+      icon: <FaBriefcase className="text-yellow-400" size={24} />
+    },
+    {
       role: "Tech Intern",
       company: "Maa Foundation",
       period: "2025",
-      desc: "A lot of NGO experience",
+      desc: "Worked on technology-driven initiatives for NGO operations and contributed to improving digital workflows and outreach.",
       icon: <FaUserTie className="text-accent" size={24} />
-    },
-    {
-      role: "Product Intern",
-      company: "GoKiwi",
-      period: "2024",
-      desc: "Improved user journeys & dashboard features for travel tech platform",
-      icon: <FaBriefcase className="text-secondary" size={24} />
     },
     {
       role: "Team Member",
       company: "AIESEC",
       period: "2023",
-      desc: "Organized cross-cultural exchange programs and leadership events",
+      desc: "Organized cross-cultural exchange programs and leadership events, collaborating with diverse international teams.",
       icon: <FaUserTie className="text-accent" size={24} />
     }
   ];
 
   return (
     <section className="py-20 bg-primary">
-      <h2 className="text-4xl font-bold text-center mb-12 gradient-text">Experience</h2>
+      <h2 className="text-4xl font-bold text-center mb-12 gradient-text">
+        Experience
+      </h2>
+
       <div className="max-w-4xl mx-auto px-4">
         {experiences.map((exp, i) => (
           <motion.div
@@ -42,8 +45,11 @@ const Experience = () => {
               <div className="p-2 rounded-full bg-gray-800">
                 {exp.icon}
               </div>
+
               <div>
-                <h3 className="text-2xl font-bold text-white">{exp.role} @ {exp.company}</h3>
+                <h3 className="text-2xl font-bold text-white">
+                  {exp.role} @ {exp.company}
+                </h3>
                 <p className="text-secondary mb-2">{exp.period}</p>
                 <p className="text-accent">{exp.desc}</p>
               </div>

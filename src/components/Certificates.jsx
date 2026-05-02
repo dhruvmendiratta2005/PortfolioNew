@@ -1,11 +1,25 @@
 import { motion } from "framer-motion";
-import { FaCertificate, FaExternalLinkAlt, FaGraduationCap, FaCode, FaTrophy } from "react-icons/fa";
+import { FaCertificate, FaExternalLinkAlt, FaGraduationCap, FaCode, FaTrophy, FaGlobe, FaStar } from "react-icons/fa";
 import { useState } from "react";
 
 const Certificates = () => {
   // Certificate data organized by type
   const certificateData = {
     courses: [
+      {
+        title: "Introduction to Database Systems",
+        issuer: "Course",
+        date: "2024",
+        image: "/certificates/Course_Introduction to Database Systems.png",
+        url: "/certificates/Course_Introduction to Database Systems.pdf"
+      },
+      {
+        title: "Introduction to Machine Learning",
+        issuer: "Course",
+        date: "2024",
+        image: "/certificates/Course_Introduction to Machine Learning (1).png",
+        url: "/certificates/Course_Introduction to Machine Learning (1).pdf"
+      },
       {
         title: "100 Days of Code - Python Bootcamp",
         issuer: "Udemy",
@@ -46,10 +60,24 @@ const Certificates = () => {
     ],
     hackathons: [
       {
+        title: "Best Project Certificate - DevOps",
+        issuer: "Dept of Networking and Communications",
+        date: "April 2026",
+        image: "/certificates/Achievements_hackathon_Devops_Certificate.png",
+        url: "/certificates/Achievements_hackathon_Devops_Certificate.pdf"
+      },
+      {
         title: "Bugbusters Finalist",
         issuer: "CINTEL Student Association",
         date: "Sept 2024",
         image: "/certificates/bugbusters.png",
+        url: "#"
+      },
+      {
+        title: "Smart India Hackathon",
+        issuer: "SIH Ministry of Education (SRM)",
+        date: "Sept 2025",
+        image: "/certificates/SIH2025.jpg",
         url: "#"
       },
       {
@@ -73,15 +101,47 @@ const Certificates = () => {
         image: "/certificates/aithon.jpg",
         url: "#"
       }
+    ],
+    achievements: [
+      {
+        title: "Best Project Certificate - DevOps",
+        issuer: "Dept of Networking and Communication SRMIST",
+        date: "2026",
+        image: "/certificates/Achievements_hackathon_Devops_Certificate.png",
+        url: "/certificates/Achievements_hackathon_Devops_Certificate.pdf"
+      },
+      {
+        title: "Outstanding Academic Peformance (Top Achievers medal + certificate)",
+        issuer: "Dept of Computing Technologies SRMIST",
+        date: "2025",
+        image: "/certificates/Top_Achiever.jpg",
+        url: "/certificates/Top_Achiever.jpg"
+      }
+    ],
+    global: [
+      {
+        title: "SAP Global Certification",
+        issuer: "SAP",
+        date: "2026",
+        image: "/certificates/SAP2024_Global_Certification20260502-32-rakaif.png",
+        url: "/certificates/SAP2024_Global_Certification20260502-32-rakaif.pdf"
+      },
+      {
+        title: "MongoDB Global Certification",
+        issuer: "MongoDB",
+        date: "2026",
+        image: "/certificates/MongoDB_Global_certification.png",
+        url: "/certificates/MongoDB_Global_certification.pdf"
+      }
     ]
   };
 
-  const [activeTab, setActiveTab] = useState("courses");
+  const [activeTab, setActiveTab] = useState("global");
 
   return (
     <section id="certificates" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="text-4xl font-bold text-center mb-6 gradient-text"
@@ -94,18 +154,20 @@ const Certificates = () => {
         <div className="flex justify-center mb-12">
           <div className="inline-flex bg-gray-800 rounded-lg p-1">
             {[
+              { id: "global", icon: <FaGlobe />, label: "Global Certifications" },
+              { id: "achievements", icon: <FaStar />, label: "Achievements" },
               { id: "courses", icon: <FaGraduationCap />, label: "Courses" },
               { id: "workshops", icon: <FaCode />, label: "Workshops" },
               { id: "hackathons", icon: <FaTrophy />, label: "Hackathons" }
+
             ].map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-4 py-2 rounded-md flex items-center transition-all ${
-                  activeTab === tab.id 
-                    ? "bg-secondary text-primary" 
-                    : "text-gray-300 hover:text-white"
-                }`}
+                className={`px-4 py-2 rounded-md flex items-center transition-all ${activeTab === tab.id
+                  ? "bg-secondary text-primary"
+                  : "text-gray-300 hover:text-white"
+                  }`}
               >
                 <span className="mr-2">{tab.icon}</span>
                 {tab.label}
@@ -126,14 +188,14 @@ const Certificates = () => {
               className="bg-gray-800 rounded-xl overflow-hidden border border-secondary/20 hover:border-secondary/50 transition-all"
             >
               <div className="relative group h-48 overflow-hidden">
-                <img 
-                  src={cert.image} 
+                <img
+                  src={cert.image}
                   alt={cert.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <a 
-                  href={cert.url} 
-                  target="_blank" 
+                <a
+                  href={cert.url}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
                 >

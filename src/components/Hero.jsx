@@ -8,14 +8,14 @@ const Hero = () => {
     <section className="h-screen bg-primary flex items-center justify-center overflow-hidden relative">
       {/* Text Content (Centered) */}
       <div className="absolute z-10 text-center px-4">
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-6xl md:text-8xl font-bold gradient-text glow"
         >
           Dhruv Mendiratta
         </motion.h1>
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
@@ -39,7 +39,7 @@ const Hero = () => {
       </div>
 
       {/* Profile Photo (Bottom Center on Mobile, Top Right on Desktop) */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8 }}
@@ -50,7 +50,7 @@ const Hero = () => {
           <div className="absolute inset-0 bg-secondary rounded-full blur-md opacity-30"></div>
           {/* Profile Image */}
           <img
-            src="/images/profile.png" // Make sure to add your image to public/images/
+            src="/images/profile.jpeg" // Make sure to add your image to public/images/
             alt="Dhruv Mendiratta"
             className="relative z-10 w-full h-full rounded-full object-cover border-4 border-secondary/50 hover:border-secondary transition-all"
           />

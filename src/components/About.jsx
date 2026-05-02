@@ -18,8 +18,11 @@ L.Icon.Default.mergeOptions({
 
 const About = () => {
   const timeline = [
-    { year: "2024", title: "GoKiwi Internship", desc: "Product Research & UX" },
-    { year: "2025", title: "AIthon Hackathon", desc: "Helix Oracle AI Project" },
+    { year: "2026", title: "Wells Fargo ILP offer", desc: "Upcoming Intern at Wells Fargo" },
+    { year: "2026", title: "Best Project Award", desc: "Adaptive Traffic Manageent DevOps Project" },
+    { year: "2026", title: "MongoDB associate developer", desc: "Sucessfully completed a global certification with MongoDB" },
+    { year: "2026", title: "SAP certified Data Analyst", desc: "Sucessfully completed a global certification with SAP" },
+    { year: "2025", title: "Inetrnship with Maa Foundation", desc: "Tech Intern at Maa Foundation" }
   ];
 
   return (
@@ -91,6 +94,11 @@ const About = () => {
             {/* SRM University */}
             <Marker position={[12.8232, 80.0442]}>
               <Popup>🎓 SRM IST — Pursuing B.Tech CSE</Popup>
+            </Marker>
+
+            {/* Wells Fargo Internship - Hyderabad */}
+            <Marker position={[17.4435, 78.3772]}>
+              <Popup>💼 Wells Fargo — Software Engineering Intern (Summer 2026)</Popup>
             </Marker>
           </MapContainer>
         </div>
