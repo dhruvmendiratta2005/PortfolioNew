@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import Certificates from "./components/Certificates";
 import SocialFeed from "./components/SocialFeed";
 import TravelSection from "./components/TravelSection";
+import Posts from "./components/Posts";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Experience />
       <Certificates />
       <SocialFeed />
+      <Posts />
       <TravelSection />
       <Contact />
     </div>
