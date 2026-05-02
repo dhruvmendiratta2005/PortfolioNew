@@ -26,7 +26,7 @@ const About = () => {
   ];
 
   return (
-    <section className="py-20 bg-primary text-accent">
+    <section id="about" className="py-20 bg-primary text-accent">
 
       {/* Recent Highlights Section */}
       <div className="text-center mb-12">

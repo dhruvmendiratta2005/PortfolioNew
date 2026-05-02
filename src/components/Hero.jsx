@@ -5,7 +5,7 @@ import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa"; // Importing
 
 const Hero = () => {
   return (
-    <section className="h-screen bg-primary flex items-center justify-center overflow-hidden relative">
+    <section id="home" className="h-screen bg-primary flex items-center justify-center overflow-hidden relative">
       {/* Text Content (Centered) */}
       <div className="absolute z-10 text-center px-4">
         <motion.h1

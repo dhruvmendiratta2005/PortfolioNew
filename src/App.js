@@ -1,4 +1,5 @@
 import "leaflet/dist/leaflet.css";
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -11,7 +12,8 @@ import TravelSection from "./components/TravelSection";
 
 function App() {
   return (
-    <div className="text-white">
+    <div className="text-white relative">
+      <Navbar />
       <Hero />
       <About />
       <Skills />
