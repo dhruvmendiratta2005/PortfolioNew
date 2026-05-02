@@ -29,8 +29,8 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'py-4' : 'py-6'}`}
     >
-      <div className="max-w-5xl mx-auto px-4">
-        <div className={`flex items-center justify-center rounded-full transition-all duration-300 overflow-x-auto no-scrollbar ${
+      <div className="flex justify-center px-4 w-full">
+        <div className={`flex items-center justify-center w-fit mx-auto rounded-full transition-all duration-300 overflow-x-auto no-scrollbar ${
           scrolled 
             ? 'bg-[#0f172a]/80 backdrop-blur-md shadow-lg shadow-black/20 border border-white/10 py-3 px-6' 
             : 'bg-[#0f172a]/50 backdrop-blur-sm border border-white/5 py-3 px-6'
