@@ -18,11 +18,19 @@ L.Icon.Default.mergeOptions({
 
 const About = () => {
   const timeline = [
-    { year: "2026", title: "Wells Fargo ILP offer", desc: "Upcoming Intern at Wells Fargo" },
-    { year: "2026", title: "Best Project Award", desc: "Adaptive Traffic Manageent DevOps Project" },
-    { year: "2026", title: "MongoDB associate developer", desc: "Sucessfully completed a global certification with MongoDB" },
-    { year: "2026", title: "SAP certified Data Analyst", desc: "Sucessfully completed a global certification with SAP" },
-    { year: "2025", title: "Inetrnship with Maa Foundation", desc: "Tech Intern at Maa Foundation" }
+    { 
+      year: "2026", 
+      title: "Wells Fargo ILP offer", 
+      desc: "Upcoming Intern at Wells Fargo",
+      images: [
+        "/images/wells_fargo_sign.jpg",
+        "/images/wells_fargo_group.jpg"
+      ]
+    },
+    { year: "2026", title: "Best Project Award", desc: "Adaptive Traffic Management DevOps Project" },
+    { year: "2026", title: "MongoDB Associate Developer", desc: "Successfully completed a global certification with MongoDB" },
+    { year: "2026", title: "SAP Certified Data Analyst", desc: "Successfully completed a global certification with SAP" },
+    { year: "2025", title: "Internship with Maa Foundation", desc: "Tech Intern at Maa Foundation" }
   ];
 
   return (
@@ -50,11 +58,29 @@ const About = () => {
             transition={{ duration: 0.5, delay: i * 0.1 }}
             className="mb-8 p-6 rounded-xl bg-gradient-to-r from-primary to-gray-900 border border-secondary/20 hover:border-secondary/50 transition-all"
           >
-            <div className="flex items-start">
-              <div className="bg-secondary w-4 h-4 rounded-full mt-1 mr-4 glow"></div>
-              <div>
+            <div className="flex items-start gap-4">
+              <div className="bg-secondary w-4 h-4 rounded-full mt-2 glow flex-shrink-0"></div>
+              <div className="flex-grow">
                 <h3 className="text-2xl font-bold text-white">{item.title}</h3>
-                <p className="text-accent">{item.year} · {item.desc}</p>
+                <p className="text-accent mb-1">{item.year} · {item.desc}</p>
+                {item.images && (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                    {item.images.map((img, idx) => (
+                      <motion.div
+                        key={idx}
+                        whileHover={{ scale: 1.03 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden rounded-xl border border-secondary/10 shadow-lg aspect-[4/3] bg-gray-950 relative group cursor-pointer"
+                      >
+                        <img 
+                          src={img} 
+                          alt={`${item.title} highlight ${idx + 1}`} 
+                          className="w-full h-full object-cover object-center group-hover:scale-105 group-hover:brightness-110 transition-all duration-500"
+                        />
+                      </motion.div>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </motion.div>

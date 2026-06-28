@@ -4,7 +4,7 @@ import { FaBriefcase, FaUserTie } from "react-icons/fa";
 const Experience = () => {
   const experiences = [
     {
-      role: "Software Engineering Intern",
+      role: "Technology Program Intern",
       company: "Wells Fargo",
       period: "Jun 2026 – Aug 2026",
       desc: "Selected for a competitive internship program focused on building scalable financial systems and gaining hands-on experience in enterprise-level technologies.",

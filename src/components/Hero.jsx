@@ -23,6 +23,14 @@ const Hero = () => {
         >
           AI & Full-Stack Developer
         </motion.p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.7 }}
+          className="text-accent text-lg md:text-xl mt-2 glow font-medium"
+        >
+          Technology Program Intern @ Wells Fargo
+        </motion.p>
 
         {/* Social Media Links */}
         <div className="mt-6 flex justify-center space-x-6">
