@@ -20,11 +20,17 @@ const About = () => {
   const timeline = [
     { 
       year: "2026", 
-      title: "Wells Fargo ILP offer", 
-      desc: "Upcoming Intern at Wells Fargo",
+      title: "Wells Fargo Technology Program Internship", 
+      desc: "Completed summer internship at Wells Fargo",
+      containImages: true,
       images: [
         "/images/wells_fargo_sign.jpg",
-        "/images/wells_fargo_group.jpg"
+        "/images/wells-fargo-internship-1.jpeg",
+        "/images/wells_fargo_group.jpg",
+        "/images/wells-fargo-internship-2.jpeg",
+        "/images/wells-fargo-internship-3.jpeg",
+        "/images/wells-fargo-internship-4.jpeg",
+        "/images/wells-fargo-internship-5.jpeg"
       ]
     },
     { year: "2026", title: "Best Project Award", desc: "Adaptive Traffic Management DevOps Project" },
@@ -62,9 +68,9 @@ const About = () => {
               <div className="bg-secondary w-4 h-4 rounded-full mt-2 glow flex-shrink-0"></div>
               <div className="flex-grow">
                 <h3 className="text-2xl font-bold text-white">{item.title}</h3>
-                <p className="text-accent mb-1">{item.year} · {item.desc}</p>
+                <p className="text-accent mb-1">{item.year} {item.desc}</p>
                 {item.images && (
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
                     {item.images.map((img, idx) => (
                       <motion.div
                         key={idx}
@@ -75,7 +81,7 @@ const About = () => {
                         <img 
                           src={img} 
                           alt={`${item.title} highlight ${idx + 1}`} 
-                          className="w-full h-full object-cover object-center group-hover:scale-105 group-hover:brightness-110 transition-all duration-500"
+                          className={`w-full h-full object-center group-hover:scale-105 group-hover:brightness-110 transition-all duration-500 ${item.containImages ? "object-contain" : "object-cover"}`}
                         />
                       </motion.div>
                     ))}
@@ -89,7 +95,7 @@ const About = () => {
 
       {/* Leaflet Map with Multiple Locations */}
       <div className="max-w-4xl mx-auto mt-16">
-        <h3 className="text-2xl font-semibold mb-4 text-center">📍 My Journey Across India</h3>
+        <h3 className="text-2xl font-semibold mb-4 text-center">ðŸ“ My Journey Across India</h3>
         <div className="rounded-2xl overflow-hidden shadow-lg border border-secondary/30">
           <MapContainer
             center={[22.5937, 78.9629]} // Center of India
@@ -104,27 +110,27 @@ const About = () => {
 
             {/* Mumbai */}
             <Marker position={[19.0760, 72.8777]}>
-              <Popup>🏙️ Mumbai — Where I grew up</Popup>
+              <Popup>ðŸ™ï¸ Mumbai â€” Where I grew up</Popup>
             </Marker>
 
             {/* Gurgaon */}
             <Marker position={[28.4595, 77.0266]}>
-              <Popup>🌇 Gurgaon — Lived here for a while</Popup>
+              <Popup>ðŸŒ‡ Gurgaon â€” Lived here for a while</Popup>
             </Marker>
 
             {/* Vapi */}
             <Marker position={[20.3893, 72.9106]}>
-              <Popup>🏡 Vapi — My current home</Popup>
+              <Popup>ðŸ¡ Vapi â€” My current home</Popup>
             </Marker>
 
             {/* SRM University */}
             <Marker position={[12.8232, 80.0442]}>
-              <Popup>🎓 SRM IST — Pursuing B.Tech CSE</Popup>
+              <Popup>ðŸŽ“ SRM IST â€” Pursuing B.Tech CSE</Popup>
             </Marker>
 
             {/* Wells Fargo Internship - Hyderabad */}
             <Marker position={[17.4435, 78.3772]}>
-              <Popup>💼 Wells Fargo — Software Engineering Intern (Summer 2026)</Popup>
+              <Popup>ðŸ’¼ Wells Fargo â€” Software Engineering Intern (Summer 2026)</Popup>
             </Marker>
           </MapContainer>
         </div>
