@@ -66,8 +66,9 @@ const Contact = () => {
         >
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label className="block text-accent mb-2">Name</label>
+              <label htmlFor="contact-name" className="block text-accent mb-2">Name</label>
               <input 
+                id="contact-name"
                 type="text" 
                 name="name"
                 value={formData.name}
@@ -78,8 +79,9 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label className="block text-accent mb-2">Email</label>
+              <label htmlFor="contact-email" className="block text-accent mb-2">Email</label>
               <input 
+                id="contact-email"
                 type="email" 
                 name="email"
                 value={formData.email}
@@ -90,8 +92,9 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label className="block text-accent mb-2">Message</label>
+              <label htmlFor="contact-message" className="block text-accent mb-2">Message</label>
               <textarea 
+                id="contact-message"
                 rows="5"
                 name="message"
                 value={formData.message}
